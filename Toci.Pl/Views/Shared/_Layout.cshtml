@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="toci.pl - szkolenia z programowania, oprogramowanie dedykowane, outsourceing">
+	<meta name="author" content="Toci Team, bzapart@gmail.com">
+	<link href="css/loader.css" rel="stylesheet">
+
+
+
+	<!-- Main Stylesheet -->
+
+	<link href="css/faq-style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="css/embed-responsive.css" rel="stylesheet">
+
+
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+
+	<link href='http://fonts.googleapis.com/css?family=Exo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body id="homepage" data-spy="scroll" data-target=".navbar" data-offset="100">
+
+	<!--loader-->
+	<div id="loader" class="sk-cube-grid">
+		<div class="sk-cube sk-cube1"></div>
+		<div class="sk-cube sk-cube2"></div>
+		<div class="sk-cube sk-cube3"></div>
+		<div class="sk-cube sk-cube4"></div>
+		<div class="sk-cube sk-cube5"></div>
+		<div class="sk-cube sk-cube6"></div>
+		<div class="sk-cube sk-cube7"></div>
+		<div class="sk-cube sk-cube8"></div>
+		<div class="sk-cube sk-cube9"></div>
+	</div>
+
+	<script src="js/loader-position.js"></script>
+
+	<header>
+
+		<!-- ==== TOOLS START ==== -->
+		<div class="tools">
+			<div class="container">
+				<ul class="pull-left">
+					<li><a href="tel:731282311"><i class="fa fa-phone"></i><span style="color:white;">731-282-311</span></a></li>
+					<li><a href="mailto:bzapart@gmail.com"><i class="fa fa-envelope"></i><span style="color:white;">bzapart@gmail.com</span></a></li>
+				</ul>
+
+			</div>
+		</div>
+		<!-- ==== TOOLS END ==== -->
+		<!-- ==== NAVBAR START ==== -->
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="images/toci-logo.png" alt="{TOCI} szkolenia programowania" class="img-responsive logo" />
+				</div>
+				<nav class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="page-scroll" id="homeClick" href="#homepage">Start</a></li>
+						<li><a id="outsourceingClick" href="/outsourceing">Oferta outsourceingu</a></li>
+						<li><a id="bespokesoftwareClick" href="/bespokesoftware">Oprogramowanie dedykowane</a></li>
+						<li><a class="page-scroll" id="aboutClick" href="#about-section">O kursie</a></li>
+						<li><a class="page-scroll" id="howItWorksClick" href="#howItWorks-section">Jak to działa?</a></li>
+						<li><a class="page-scroll" id="organisersClick" href="#organisers-section">Prelegent</a></li>
+						<li><a class="page-scroll" id="videoClick" href="#video-section">Video</a></li>
+						<li><a class="page-scroll" id="faqClick" href="#faq-section">FAQ</a></li>
+						<li><a class="page-scroll" id="applyClick" href="#apply-section">Aplikuj</a></li>
+						<li><a class="page-scroll" id="contactClick" href="#contact-section">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- ==== NAVBAR END ==== -->
+
+	</header>
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
+
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; 2021 - Toci.Pl - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+		</div>
+	</footer>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+
+	<!-- Modernizr Plugin -->
+	<script src="js/modernizr.custom.97074.js"></script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+
+	<!-- Bootstrap Plugins -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Retina Plugin -->
+	<script src="js/retina-1.1.0.min.js"></script>
+
+	<!-- Superslides Plugin -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.animate-enhanced.min.js"></script>
+	<script src="js/jquery.superslides.js"></script>
+
+	<!-- Owl Carousel Plugin -->
+	<script src="js/owl.carousel.min.js"></script>
+
+	<!-- Parallax ImageScroll Plugin -->
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+
+	<!-- Fancybox Plugin -->
+	<script src="js/jquery.fancybox.js"></script>
+
+	<!-- ImagesLoaded Plugin -->
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+
+	<!-- Masonry Plugin -->
+	<script src="js/masonry.pkgd.min.js"></script>
+
+	<!-- Progressbar Plugin -->
+	<script src="js/bootstrap-progressbar.js"></script>
+
+	<!-- Scroll Reveal Plugin -->
+	<script src="js/scrollReveal.js"></script>
+
+
+	<!-- jQuery Settings -->
+	<script src="js/settings.js"></script>
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/scrolling-nav.js"></script>
+
+
+	<script src="js/faq/main.js"></script>
+	<script src="js/FormUtils.js"></script>
+	<script src="js/applyValid.js"></script>
+	<script src="js/contactValid.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/UtilsForAttrData.js"></script>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+	<script src="js/DocumentReady.js"></script>
+</body>
+</html>

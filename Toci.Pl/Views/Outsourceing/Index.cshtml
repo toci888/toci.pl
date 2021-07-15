@@ -1,0 +1,48 @@
+﻿@using Toci.Pl.Models.Outsourceing;
+
+@model List<DevsModel>
+
+	
+	<div id="slides">
+		
+		<div class="slides-container">
+			<img src="images/slider1.jpg" class="img-responsive" alt="home background" />
+			<img src="images/slider2.jpg" class="img-responsive" alt="home background" />
+			<img src="images/slider3.jpg" class="img-responsive" alt="home background" />
+
+			<!--<img src="http://placehold.it/1600x900.jpg" alt="" />
+		<img src="http://placehold.it/1600x900.jpg" alt="" />-->
+		</div>
+		<div class="tint"></div>
+		<div class="slider-offers text-center">
+			<h1 class="whiteColor headers">Oferujemy wynajem programistów. Poniżej lista dostępnych programistów.</h1>
+			@foreach (DevsModel dev in Model)
+			{
+				<div class="whiteColor">
+					<h3 class="text-transform-none">@dev.Name, @dev.Level, <span class="greenTemplateColor">@string.Join(", ", @dev.Technologies.ToArray())</span></h3>
+			
+				</div>
+			}
+			<ul>
+
+				<li>
+
+				</li>
+
+				<li>
+					
+				</li>
+
+				<li>
+					
+				</li>
+			</ul>
+		</div>
+
+
+	</div>
+
+
+
+
+
